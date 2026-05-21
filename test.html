@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Client Onboarding Interface</title>
+
+  <style>
+    body {
+      font-family: Arial;
+      background: #f2f4f8;
+      padding: 20px;
+    }
+
+    .container {
+      max-width: 500px;
+      background: white;
+      padding: 20px;
+      margin: auto;
+      border-radius: 10px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    }
+
+    h2 {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    label {
+      font-weight: bold;
+      display: block;
+      margin-top: 10px;
+    }
+
+    input, select, textarea {
+      width: 100%;
+      padding: 8px;
+      margin-top: 5px;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+    }
+
+    button {
+      width: 100%;
+      margin-top: 15px;
+      padding: 10px;
+      background: #007bff;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background: #0056b3;
+    }
+
+    .note {
+      font-size: 12px;
+      color: gray;
+      margin-top: 5px;
+    }
+  </style>
+</head>
+
+<body>
+
+<div class="container">
+  <h2>Client Onboarding System</h2>
+
+  <form>
+
+    <!-- Client Info -->
+    <label>Full Name</label>
+    <input type="text" placeholder="Enter client name">
+
+    <label>Email</label>
+    <input type="email" placeholder="Enter email">
+
+    <label>Phone Number</label>
+    <input type="text" placeholder="Enter phone number">
+
+    <label>Company Name</label>
+    <input type="text" placeholder="Enter company">
+
+    <!-- Service Details -->
+    <label>Service Type</label>
+    <select>
+      <option>Support</option>
+      <option>Technical</option>
+      <option>Sales</option>
+      <option>Consulting</option>
+    </select>
+
+    <label>Project Description</label>
+    <textarea rows="3" placeholder="Enter project details"></textarea>
+
+    <label>Expected Start Date</label>
+    <input type="date">
+
+    <!-- Mood & Priority -->
+    <label>Client Mood</label>
+    <select>
+      <option>😊 Happy</option>
+      <option>😐 Confused</option>
+      <option>😟 Frustrated</option>
+      <option>😡 Angry</option>
+    </select>
+
+    <label>Priority Level</label>
+    <select>
+      <option>High</option>
+      <option>Medium</option>
+      <option>Low</option>
+    </select>
+
+    <!-- Internal Notes -->
+    <label>Internal Notes (CRM)</label>
+    <textarea rows="3" placeholder="For internal use only"></textarea>
+
+    <p class="note">This section is only for internal team use.</p>
+
+    <!-- Submit -->
+    <button type="submit">Submit Client</button>
+
+  </form>
+</div>
+
+</body>
+</html>
